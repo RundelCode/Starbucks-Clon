@@ -1,0 +1,359 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "SoDo Sans SemiBold";
+    overflow-x: hidden;
+
+}
+
+@font-face {
+    font-family: "SoDo Sans SemiBold";
+    src: url("https://db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot");
+    src: url("https://db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.svg#SoDo Sans SemiBold")format("svg");
+}
+
+.header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f8f6;
+}
+
+.leftSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+.leftSection img{
+    box-sizing: content-box;
+    height: 60px;
+    width: 60px;
+    padding-right: 10%;
+}
+
+.leftSection ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    list-style: none;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.leftSection ul li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.leftSection ul li a{
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0px solid #008248;
+    transition: 1s;
+    overflow: hidden;
+    
+}
+
+
+.rightSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+.rightSection ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    list-style: none;
+    height: 100%;
+}
+
+.rightSection ul li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.rightSection ul li a{
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0px solid #008248;
+    transition: 1s;
+}
+
+
+.rightSection ul li a:hover, .leftSection ul li a:hover{
+    border-bottom: 10px solid #008248;
+    transition: 1s;
+    color: #008248;
+}
+
+
+
+#signIn{
+    padding: 10px 25px 15px 25px;
+    border-radius: 10px;
+    border: 0.5px solid #333333;
+    font-weight: bold;
+}
+
+#joinNow{
+    padding: 10px 25px 15px 25px;
+    border-radius: 10px;
+    color: #f1f8f6;
+    background-color: black;
+    border: none;
+}
+
+.subHeader{
+    background-color: #1e3932;
+    color: #f1f8f6;
+    padding-left: 10%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    position:sticky;
+}
+
+.bigImageSection{
+    background-image: url("https://papers.co/wallpaper/papers.co-aa56-back-of-starbucks-logo-art-29-wallpaper.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f1f8f6;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    align-items: start;
+    padding-left: 5%;
+    justify-content: center;
+    gap: 5%;
+}
+
+.leftContainer a{
+    color: #f1f8f6;
+}
+
+.gettingStartedSection{
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gettingStartedSection a{
+    color: #008248;
+}
+
+.gettingStartedTitleSection{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps p{
+    font-size: 90%;
+}
+
+.steps h3{
+    font-size: 120%;
+}
+
+.steps{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.step{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    text-align: center;
+}
+
+.carrousel{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.carrouselTitle{
+    width: 100%;
+    height: 40%;
+    background-color: #f1f8f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carrouselTitle h1{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonSection{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+
+.buttonSection button{
+    width: 5%;
+    border: none;
+    border-bottom: 0px solid #008248;
+    background-color: #f1f8f6;
+    transition: 0.5s;
+}
+.star{
+    color: rgb(225, 195, 108);
+    font-size: 130%;
+}
+
+.buttonSection button:hover{
+    cursor: pointer;
+    border-bottom: 5px solid #008248;
+    transition: 0.5s;
+    color: #008248;
+}
+
+.carrouselinfosection{
+    width: 600vw;
+    height: 60%;
+    background-color: #d4e9e2;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;    
+}
+
+.carrouselInfo{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtSection{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.txtSection h3{
+    font-weight: bolder;
+    font-size: 130%;
+}
+
+.txtSection p{
+    font-size: 80%;
+}
+
+.carrouselInfo img{
+    width: 20%;
+}
+
+.endlessExtrasSextion{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.endlessExtrasSextion p{
+    text-align: center;
+    font-size: 90%;
+}
+
+.endlessExtrasSextion a{
+    color: #008248;
+    font-size: 80%;
+}
+
+.endlessExtrasSextion img{
+    width: 40%;
+}
+
+.titleSection{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.extrasSection{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    height: 70%;
+}
+
+.extras{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:  20px;
+}
